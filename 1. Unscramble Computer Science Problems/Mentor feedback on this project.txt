@@ -1,0 +1,13 @@
+I got this review for my efficiency analysis for this project by the code reviewer and I passed this project, all my codes were prefect and these are the suggestions for my code analysis part:
+=======================================================================
+
+Task0.py : Time complexity is right.
+
+Task1.py : perfect explanation.
+
+Task2.py : For loop has O(n) time complexity, one of the cases for time complexity to be O(n^2) is when there are 	nested for loops and your code has not nested for loops, and IF function has time complexity O(n). So, 	the overall time complexity is O(n).
+
+Task3.py : this one is perfect.
+
+Task4.py : The time complexity of this task is O(n logn) because this is the most complex nation because of the 	sorted() function If function has time complexity if O(1) not O(n).
+
