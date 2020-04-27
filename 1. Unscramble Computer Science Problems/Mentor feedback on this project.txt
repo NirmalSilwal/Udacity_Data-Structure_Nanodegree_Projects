@@ -11,3 +11,16 @@ Task3.py : this one is perfect.
 
 Task4.py : The time complexity of this task is O(n logn) because this is the most complex nation because of the 	sorted() function If function has time complexity if O(1) not O(n).
 
+suggested links for references:
+
+https://www.bigocheatsheet.com/
+
+https://stackoverflow.com/questions/5790860/and-vs-list-and-dict-which-is-better
+
+https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation
+
+https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/
+
+https://towardsdatascience.com/understanding-time-complexity-with-python-examples-2bda6e8158a7
+
+https://somedudesays.com/2020/01/the-basics-of-big-o-notation/
