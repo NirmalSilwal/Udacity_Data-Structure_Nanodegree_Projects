@@ -1,0 +1,132 @@
+Step 3 - Calculate Big O
+Run time analysis of my solution:
+------------------------------------------------------
+
+
+ Task0.py
+------------
+Time complexity (worst case): O(1)
+
+Explanation: In both line of print function, as I am accessing the elements from list using indexing, 
+	     this have worst case complexity of O(1) for each line.
+	     Here input size does't affect the access time using indexing.
+	
+	Thus overall, O(1) + O(1) = O(2) =O(1) i.e constant, since both are constant time. 
+	    
+
+
+*****************************************************************************************************************
+ Task1.py
+------------
+Time complexity (worst case): O(n)
+
+Explanation: Here I have used zip function which runs in O(1) time as it just allocates a special iterable 
+	    (called the zip object), and assigns the parameter array to an internal field.
+ 	    Here for loop will iterate for n input objects, so it will have O(n) time complexity.
+	    Also, adding the element to list using extend method takes place in constant time O(k),
+	    where 'k' is  the number of elements in the parameter i.e O(4), k=4
+	    In return statement, converting list to set will take O(n) as it will have to iterate over n elements and 
+	    adding each element to hash set is O(1), so this line totals O(n)
+	    Print function will run in O(1) time.
+	
+	so overall, O(1) + O(n) + O(4) + O(n) + O(1) = O(2n+6) = O(n)
+
+
+*****************************************************************************************************************
+ Task2.py
+------------
+Time complexity (worst case) : O(n^2)
+
+Explanation : Here in find_telephone_duration() function, in first for loop, it will take O(n) time to iterate over calls.
+	In conditionals statements, we are using .keys() method of dictionary, which is O(1) operation,
+	but using "not in" comparision will take O(n), so overall O(n), for two "not in " operation O(n)+O(n)
+	Also, update operation in dictionary take place in O(1) time.
+	List comprehension line will take O(n) to iterate over all values in dictionary.
+	Finding maximum duration using max() will take O(n)
+	Another for loop in the end of function will take O(n) in worse scenario.
+	Last print statement will execute in O(1) time.
+
+	so overall, for first for loop, O(n^2),
+		following that, O(n) + O(n) + O(n) + O(1)
+		i.e O(n^2 + 3n + 1) = O(n^2)
+	  
+
+
+*****************************************************************************************************************
+ Task3.py
+------------
+Time complexity (worst case) : O(n logn)
+
+Explanation : for find_unique_codes() function, it will take O(n) to run for loop
+	sorted()  function will take O(n logn)
+	second function percentage_receiver() will take O(n) +O(1) = O(n)
+	to find bangalore_caller using list comprehension will take O(n)
+	two print statements will take O(1) each
+	for loop to print unique codes will take O(n)
+
+	so overall, O(n) + O(n logn) + O(n) + O(1) + O(n) + O(1) + O(n) + O(1) = O(n logn  + 4n + 3) = O(n logn)
+
+
+*****************************************************************************************************************
+ Task4.py
+------------
+Time complexity (worst case) : O(n^2)
+
+Explanation : Here in possible_telemarketers() function, we'r convering list to set then back to list so,
+	this will take O(n) + O(n) = O(2n) = O(n)
+	for four similar lines, it will take O(n) + O(n) +O(n) +O(n)  = O(4n) = O(n)
+	Now for loop will take O(n),
+	if condition will take O(n) + O(n) + O(n) = O(3n) = O(n) for each of "not in" operations
+	append() operation will take O(1)
+	sorted()  function will take O(n logn)
+	print statement will take O(1)
+	Lastly, for loop to iterate over telemarketers will take O(n) with O(1) each for printing each potential telemarketers
+	
+	so overall, O(n) + O(n) * O(n + 1) + O(n logn) +O(1) + O(n) = O(n) + O(n^2) +O(n logn) + O(n) = O(n^2 + n logn + 2n) = O(n^2)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+References:
+[1]. https://www.ics.uci.edu/~brgallar/week8_2.html
+[2]. https://wiki.python.org/moin/TimeComplexity
+[3]. Stackoverflow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
